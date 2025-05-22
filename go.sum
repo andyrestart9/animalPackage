@@ -2,7 +2,7 @@ github.com/andyrestart9/dog v0.0.0-20250215084519-3067746a3e23 h1:wwtCe+OwT95ShY
 github.com/andyrestart9/dog v0.0.0-20250215084519-3067746a3e23/go.mod h1:Enk2vIXab5A0qZNA8fzPXBdPG8rIBlcgDIr8D5nLAUw=
 github.com/andyrestart9/private-repo v0.0.0-20250215133011-b87f94999c98 h1:gbnIl02xwX1O0FSWjsI1n0RJWGOl4xlpOllJEge2Ajc=
 github.com/andyrestart9/private-repo v0.0.0-20250215133011-b87f94999c98/go.mod h1:92LFpIRZ3b7yRwox1vMTHz6umUVzoRYyYjWHGJqQGbM=
-github.com/andyrestart9/puppy v0.0.0-20250215022441-ed59c2694bf2 h1:aWM6DdAAcPV7px/lWArXh12ZrSjhHOs3ed/3HokFat0=
-github.com/andyrestart9/puppy v0.0.0-20250215022441-ed59c2694bf2/go.mod h1:IHnQ0uCpGZthYWO53krr8i3736o3nEhypq6xwZWiRtI=
-github.com/andyrestart9/puppy v0.0.0-20250215090105-e27b5e7bba38 h1:ysLi1lX2HEVaH3U0r5SIFEoVl3K5VBBQ8m5x87Rjhcs=
-github.com/andyrestart9/puppy v0.0.0-20250215090105-e27b5e7bba38/go.mod h1:/TcT2LemVLkZnwrEN8kr2XQmrd796Mqa+QgSA5gzHlo=
+github.com/andyrestart9/puppy v1.2.0 h1:TG7GB6ZGpnm6shsVvsX37wN/Dc4VneuRc+sXlbJWd88=
+github.com/andyrestart9/puppy v1.2.0/go.mod h1:/TcT2LemVLkZnwrEN8kr2XQmrd796Mqa+QgSA5gzHlo=
+github.com/andyrestart9/puppy v1.3.0 h1:Fy8I99T7e7YZMW6hezt1kZ6iQXldYQs943UKWsyMV2U=
+github.com/andyrestart9/puppy v1.3.0/go.mod h1:/TcT2LemVLkZnwrEN8kr2XQmrd796Mqa+QgSA5gzHlo=

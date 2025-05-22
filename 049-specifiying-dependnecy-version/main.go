@@ -5,10 +5,11 @@ import (
 
 	"github.com/andyrestart9/puppy"
 )
-
-// go get github.com/andyrestart9/puppy
+// go get github.com/andyrestart9/puppy@v1.3.0
 // go mod tidy
 func main() {
+	puppy.From13()
+
 	s1 := puppy.Bark()
 	s2 := puppy.Barks()
 
