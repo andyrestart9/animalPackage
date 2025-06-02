@@ -1,5 +1,7 @@
 # How to use godoc
 
+## RUN Go Documentation Server
+
 <https://pkg.go.dev/golang.org/x/tools/cmd/godoc>
 
 如果沒有安裝 godoc 執行下面指令安裝
@@ -43,3 +45,21 @@ go to link and see Go Documentation Server
 看我們在 242-godoc/mymath 寫的註解
 
 <http://localhost:6060/pkg/mymodule/242-godoc/mymath/>
+
+## 如何在 godoc.org 穰別人看到我的文件
+
+go to <https://godoc.org> 搜尋 pkg 在 github 的 URL ，之後就能在 godoc.org 看到自己的 pkg 的文件
+
+例如：
+
+搜尋 `https://github.com/andyrestart9/puppy`
+
+搜尋 `https://github.com/andyrestart9/animalPackage/tree/main/242-godoc/mymath`
+
+不會馬上看到，收錄需要時間
+
+## 為什麼 go doc 和 godoc 不會展示 package main
+
+在 Go 里，go doc 和 godoc 默认只展示“导出”的符号（即首字母大写的类型、函数、变量等），而且 package main 是一个命令包，不能被别的包 import，所以从文档工具的角度它“没有任何导出标识符”，只会显示包级注释，不会列出函数或变量。
+
+godoc 的 HTTP 服务同样遵循“只展示导出符号”的原则，且它专为 library（可被 import 的包）设计。要在 Web 界面下强行查看 main 包
