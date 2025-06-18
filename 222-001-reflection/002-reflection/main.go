@@ -70,6 +70,15 @@ func inspect(i interface{}) {
 	t := reflect.TypeOf(i)  // 取得變數 i 的動態型別 (reflect.Type)
 	v := reflect.ValueOf(i) // 取得變數 i 的反射值 (reflect.Value)
 
+	// 在 reflect 裡，Elem() 代表「把外層包裝打開，拿到裡面的元素 (element)」
+	// var n int = 7	直接存值	0x1000 → 7
+	// var p *int = &n	存位址	0x2000 → 0x1000 (再去 0x1000 拿到 7)
+	// n 直接把 7 放在自己的位址 0x1000。
+	// p 存在 0x2000，裡面放的是「另一個位址 0x1000」。
+	// 換句話說：p 只是一張「地圖」，真正的 7 還躺在別處。
+	// 因此 p 的值不是 7，而是「通往 7 的路標」——這就叫「包了一層」。
+	// Elem() 每呼叫一次就會拆最外面那一層
+
 	// 如果傳入的是指標 (pointer)，則取其所指向的元素型別和值
 	if t.Kind() == reflect.Ptr {
 		t = t.Elem() // 取得指標指向的元素型別
